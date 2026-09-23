@@ -1,20 +1,20 @@
 # homebrew-tap
 
-Formule Homebrew di [Massimo D'Ascola](https://github.com/massimodascola). / Homebrew formulae by Massimo D'Ascola.
+Homebrew formulae by [Massimo D'Ascola](https://github.com/massimodascola).
 
 ## Tendina
 
-Nasconde le icone della barra dei menu di macOS, sostituto di Hidden Bar per macOS 27. Codice e istruzioni: [massimodascola/tendina](https://github.com/massimodascola/tendina).
+Hides menu bar icons on macOS: a Hidden Bar replacement for macOS 27. Source and documentation: [massimodascola/tendina](https://github.com/massimodascola/tendina).
 
 ```sh
 brew install massimodascola/tap/tendina
-tendina-installa
+tendina-install
 ```
 
-Homebrew compila Tendina sul tuo Mac; `tendina-installa` la copia in Applicazioni e la avvia. Per aggiornare: `brew upgrade tendina && tendina-installa`.
+Homebrew builds Tendina on your Mac; `tendina-install` copies it to Applications and launches it. To update: `brew upgrade tendina && tendina-install`.
 
-## Aggiornare la formula (per chi mantiene il tap)
+## Releasing a new version (for maintainers)
 
-1. Nel repo `tendina`: crea l'etichetta della nuova versione (`git tag -a vX.Y.Z -m "Tendina X.Y.Z"`) e caricala (`git push origin vX.Y.Z`).
-2. Calcola l'impronta del pacchetto: `curl -fsSL https://github.com/massimodascola/tendina/archive/refs/tags/vX.Y.Z.tar.gz | shasum -a 256`.
-3. In `Formula/tendina.rb` aggiorna `url` e `sha256`, poi prova con `brew upgrade tendina` o `brew reinstall tendina`.
+1. In the `tendina` repo, create and push the version tag: `git tag -a vX.Y.Z -m "Tendina X.Y.Z"` and `git push origin vX.Y.Z`.
+2. Compute the archive checksum: `curl -fsSL https://github.com/massimodascola/tendina/archive/refs/tags/vX.Y.Z.tar.gz | shasum -a 256`.
+3. In `Formula/tendina.rb`, update `url` and `sha256`, then test with `brew upgrade tendina` or `brew reinstall tendina`.
