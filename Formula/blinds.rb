@@ -2,7 +2,7 @@
 # so no Apple signature is needed and Gatekeeper blocks nothing.
 # Homebrew cannot write to /Applications, so it also installs the
 # `blinds-install` command, which copies the app there and launches it.
-# Blinds was called Tendina up to 1.1.0 (see formula_renames.json).
+# Blinds was called Tendina up to 1.1.0: blinds-install also removes the old app.
 class Blinds < Formula
   desc "Hide menu bar icons on macOS 27 (Hidden Bar replacement)"
   homepage "https://github.com/massimodascola/blinds"
