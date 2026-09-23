@@ -13,7 +13,15 @@ blinds-install
 
 Homebrew builds Blinds on your Mac; `blinds-install` copies it to Applications and launches it. To update: `brew upgrade blinds && blinds-install`.
 
-Blinds was called Tendina up to version 1.1.0. If you installed `tendina`, `brew upgrade` moves you to `blinds` on its own (see `formula_renames.json`); then run `blinds-install`.
+Blinds was called Tendina up to version 1.1.0. If you installed `tendina`, switch with:
+
+```sh
+brew uninstall --force tendina
+brew install massimodascola/tap/blinds
+blinds-install
+```
+
+`blinds-install` also moves the old Tendina.app to the Trash. Your icon positions and settings stay.
 
 ## Releasing a new version (for maintainers)
 
