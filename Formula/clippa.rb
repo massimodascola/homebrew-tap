@@ -5,16 +5,14 @@
 class Clippa < Formula
   desc "Clipboard manager for macOS: history, pinboards, search, sync (Paste alternative)"
   homepage "https://github.com/massimodascola/clippa"
-  url "https://github.com/massimodascola/clippa/archive/refs/tags/v1.2.4.tar.gz"
-  sha256 "6002ad72bd2be4f77a128cdc510dbd35ed180c59e86f443d96bfbddeb1697ada"
+  url "https://github.com/massimodascola/clippa/archive/refs/tags/v1.2.5.tar.gz"
+  sha256 "cee01d4033dc594bf7ad2326b9d443f0ae99b14f891a1dfbbdf72922cd8b826a"
   license "MIT"
   head "https://github.com/massimodascola/clippa.git", branch: "main"
 
   depends_on macos: :sonoma
 
   def install
-    # Homebrew already builds in a sandbox: SwiftPM must not add its own.
-    ENV["CLIPPA_SWIFT_FLAGS"] = "--disable-sandbox"
     system "sh", "build.sh"
     prefix.install "build/Clippa.app"
 
