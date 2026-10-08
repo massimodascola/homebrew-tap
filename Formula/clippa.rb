@@ -5,8 +5,8 @@
 class Clippa < Formula
   desc "Clipboard manager for macOS: history, pinboards, search, sync (Paste alternative)"
   homepage "https://github.com/massimodascola/clippa"
-  url "https://github.com/massimodascola/clippa/archive/refs/tags/v1.3.1.tar.gz"
-  sha256 "010c3d1fa34a61acebef2707456f64be490aab0b2034e17e14a89238e3886283"
+  url "https://github.com/massimodascola/clippa/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "64a8d955b199f7f190858c145f56808d3d8a1012301f07d60379042a7f309cf6"
   license "MIT"
   head "https://github.com/massimodascola/clippa.git", branch: "main"
 
