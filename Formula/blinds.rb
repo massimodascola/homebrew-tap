@@ -6,8 +6,8 @@
 class Blinds < Formula
   desc "Hide menu bar icons on macOS 27 (Hidden Bar replacement)"
   homepage "https://github.com/massimodascola/blinds"
-  url "https://github.com/massimodascola/blinds/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "694dbd45948d2efb5ac39e0cb98ce3941c85f4b1f494c9fd3c172822774080b4"
+  url "https://github.com/massimodascola/blinds/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "72d35c8a56ab763cd23698a15c3c60d22f426e8ef337b65d1f3cff0b2e347e5f"
   license "MIT"
   head "https://github.com/massimodascola/blinds.git", branch: "master"
 
